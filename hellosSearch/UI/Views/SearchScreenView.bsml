@@ -1,0 +1,23 @@
+﻿<bg xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:schemaLocation='https://monkeymanboy.github.io/BSML-Docs/ https://raw.githubusercontent.com/monkeymanboy/BSML-Docs/gh-pages/BSMLSchema.xsd'
+    anchor-min-x='0' anchor-min-y='0'
+    anchor-max-x='1' anchor-max-y='1'
+    anchor-pos-x='0' anchor-pos-y='0'
+    id='background'
+    bg='round-rect-panel'>
+  <button id='search-button'
+          anchor-min-x='0' anchor-min-y='0'
+          anchor-max-x='1' anchor-max-y='1'
+          anchor-pos-x='1' anchor-pos-y='0'
+          pivot-x='0' pivot-y='1'
+          size-delta-x='-12' size-delta-y='0'
+          on-click='search-button-clicked' />
+  <icon-button id='cancel-search-button'
+               icon='hellosUI:HUI.Assets.cross.png'
+               anchor-min-x='1' anchor-min-y='0'
+               anchor-max-x='1' anchor-max-y='1'
+               anchor-pos-x='-1' anchor-pos-y='0'
+               pivot-x='1' pivot-y='1'
+               size-delta-x='9' size-delta-y='0'
+               on-click='cancel-search-button-clicked' />
+</bg>

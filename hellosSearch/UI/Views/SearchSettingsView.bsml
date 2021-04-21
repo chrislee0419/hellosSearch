@@ -1,0 +1,117 @@
+﻿<bg xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:schemaLocation='https://monkeymanboy.github.io/BSML-Docs/ https://raw.githubusercontent.com/monkeymanboy/BSML-Docs/gh-pages/BSMLSchema.xsd'>
+  <tab-selector tab-tag='search-settings-tab'
+                size-delta-x='0' size-delta-y='6'
+                select-cell='tab-selected' />
+
+  <bg anchor-min-x='0' anchor-min-y='0'
+      anchor-max-x='1' anchor-max-y='1'
+      size-delta-x='0' size-delta-y='-8'
+      anchor-pos-x='0' anchor-pos-y='-2'>
+    <tab tags='search-settings-tab' tab-name='General Settings'>
+      <vertical anchor-min-x='0' anchor-min-y='0'
+                anchor-max-x='1' anchor-max-y='1'
+                size-delta-x='0' size-delta-y='0'
+                anchor-pos-x='0' anchor-pos-y='0'
+                horizontal-fit='Unconstrained'
+                vertical-fit='Unconstrained'
+                pad='2'>
+        <bool-setting text='Hide keyboard when level is selected'
+                      preferred-width='74'
+                      preferred-height='5'
+                      font-size='3.8'
+                      value='close-screen-on-select-level-value'
+                      get-event='refresh-all-values'
+                      apply-on-change='true' />
+        <bool-setting text='Hide keyboard when switching level pack'
+                      preferred-width='74'
+                      preferred-height='5'
+                      font-size='3.8'
+                      value='close-screen-on-select-level-collection-value'
+                      get-event='refresh-all-values'
+                      apply-on-change='true' />
+        <bool-setting text='Clear search query when switching level pack'
+                      preferred-width='74'
+                      preferred-height='5'
+                      font-size='3.8'
+                      value='clear-query-on-select-level-collection-value'
+                      get-event='refresh-all-values'
+                      apply-on-change='true' />
+        <bool-setting text='Show laser pointer on off-hand'
+                      preferred-width='74'
+                      preferred-height='5'
+                      font-size='3.8'
+                      value='off-hand-laser-pointer-value'
+                      get-event='refresh-all-values'
+                      apply-on-change='true' />
+      </vertical>
+    </tab>
+
+    <tab tags='search-settings-tab' tab-name='Search Options'>
+      <vertical anchor-min-x='0' anchor-min-y='0'
+                anchor-max-x='1' anchor-max-y='1'
+                size-delta-x='0' size-delta-y='0'
+                anchor-pos-x='0' anchor-pos-y='0'
+                horizontal-fit='Unconstrained'
+                vertical-fit='Unconstrained'
+                spacing='1.5'
+                pad='2'>
+        <bool-setting text='Strip symbols from song details'
+                      hover-hint='Ignore all non-alphanumeric characters when searching through the song fields'
+                      preferred-width='68'
+                      preferred-height='5.5'
+                      font-size='3.8'
+                      value='strip-symbols-value'
+                      get-event='refresh-all-values'
+                      apply-on-change='true' />
+        <bool-setting text='Split query by words'
+                      hover-hint='Search for each word in the query individually, rather than searching for an exact phrase'
+                      preferred-width='68'
+                      preferred-height='5.5'
+                      font-size='3.8'
+                      value='split-query-value'
+                      get-event='refresh-all-values'
+                      apply-on-change='true' />
+        <horizontal bg='round-rect-panel'
+                    bg-color='#00000080'
+                    preferred-height='7'
+                    pad-left='2' pad-right='2'>
+          <text text='Song fields to search through'
+                align='Left'
+                size-delta-x='38' size-delta-y='7'
+                italics='true'
+                underlined='true'
+                font-size='3.8' />
+        </horizontal>
+        <vertical vertical-fit='PreferredSize'
+                  preferred-width='80'
+                  spacing='1'>
+          <bool-setting text='  :  Song title'
+                        preferred-height='5'
+                        font-size='3.4'
+                        value='song-fields-song-title-value'
+                        get-event='refresh-all-values'
+                        apply-on-change='true' />
+          <bool-setting text='  :  Song author'
+                        preferred-height='5'
+                        font-size='3.4'
+                        value='song-fields-song-author-value'
+                        get-event='refresh-all-values'
+                        apply-on-change='true' />
+          <bool-setting text='  :  Level author'
+                        preferred-height='5'
+                        font-size='3.4'
+                        value='song-fields-level-author-value'
+                        get-event='refresh-all-values'
+                        apply-on-change='true' />
+          <bool-setting text='  :  Contributors'
+                        preferred-height='5'
+                        font-size='3.4'
+                        value='song-fields-contributors-value'
+                        get-event='refresh-all-values'
+                        apply-on-change='true' />
+        </vertical>
+      </vertical>
+    </tab>
+  </bg>
+</bg>

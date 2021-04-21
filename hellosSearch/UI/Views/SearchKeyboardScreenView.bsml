@@ -1,0 +1,51 @@
+﻿<bg xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:schemaLocation='https://monkeymanboy.github.io/BSML-Docs/ https://raw.githubusercontent.com/monkeymanboy/BSML-Docs/gh-pages/BSMLSchema.xsd'
+    anchor-min-x='0' anchor-min-y='0'
+    anchor-max-x='1' anchor-max-y='1'
+    id='background'
+    bg='round-rect-panel'>
+  <!-- persistent top buttons -->
+  <icon-button id='settings-button'
+               icon='hellosUI:HUI.Assets.settings.png'
+               anchor-min-x='0' anchor-min-y='1'
+               anchor-max-x='0' anchor-max-y='1'
+               size-delta-x='5' size-delta-y='5'
+               anchor-pos-x='1.5' anchor-pos-y='-1.5'
+               pivot-x='0' pivot-y='1'
+               on-click='settings-clicked' />
+  <icon-button id='close-button'
+               icon='hellosUI:HUI.Assets.cross.png'
+               anchor-min-x='1' anchor-min-y='1'
+               anchor-max-x='1' anchor-max-y='1'
+               size-delta-x='5' size-delta-y='5'
+               anchor-pos-x='-1.5' anchor-pos-y='-1.5'
+               pivot-x='1' pivot-y='1'
+               on-click='close-clicked' />
+  
+  <bg id='keyboard-view'
+      anchor-min-x='0' anchor-min-y='0'
+      anchor-max-x='1' anchor-max-y='1'>
+    <text text='~search-text'
+          anchor-min-x='0' anchor-min-y='1'
+          anchor-max-x='1' anchor-max-y='1'
+          size-delta-x='-4' size-delta-y='0'
+          anchor-pos-x='0' anchor-pos-y='-5'
+          font-size='4'
+          font-align='Center' />
+    <text text='~results-number-text'
+          anchor-min-x='0' anchor-min-y='1'
+          anchor-max-x='0' anchor-max-y='1'
+          size-delta-x='12' size-delta-y='0'
+          anchor-pos-x='3' anchor-pos-y='-8.5'
+          pivot-x='0' pivot-y='1'
+          font-size='3'
+          font-align='Left' />
+    
+    <bg id='keyboard-container'
+        anchor-min-x='0' anchor-min-y='0'
+        anchor-max-x='1' anchor-max-y='0'
+        pivot-x='0.5' pivot-y='0'
+        anchor-pos-x='0' anchor-pos-y='2'
+        size-delta-x='-4' size-delta-y='~keyboard-height' />
+  </bg>
+</bg>
