@@ -1,13 +1,13 @@
 ﻿using System;
 using HMUI;
 using BeatSaberMarkupLanguage.Attributes;
-using HUISearch.Search;
-using HUI.UI.Settings;
+using HUI.Interfaces;
 using HUI.Utilities;
+using HUISearch.Search;
 
 namespace HUISearch.UI.Settings
 {
-    public class SearchSettingsTab : SettingsModalManager.SettingsModalTabBase
+    public class SearchSettingsTab : SettingsModalTabBase
     {
         public event Action OffHandLaserPointerSettingChanged;
         public event Action SearchOptionChanged;
