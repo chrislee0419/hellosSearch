@@ -156,7 +156,6 @@
     <Compile Include="Search\SearchManager.cs" />
     <Compile Include="Search\WordPredictionEngine.cs" />
     <Compile Include="Search\WordSearchEngine.cs" />
-    <Compile Include="UI\Components\CustomKeyboardButton.cs" />
     <Compile Include="UI\Components\PredictionBar.cs" />
     <Compile Include="UI\Screens\SearchKeyboardScreenManager.cs" />
     <Compile Include="UI\Screens\SearchScreenManager.cs" />
