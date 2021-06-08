@@ -49,8 +49,6 @@ namespace HUISearch.UI.Screens
         private Button _cancelButton;
 #pragma warning restore CS0649
 
-        private static readonly Vector2 KeyboardScreenSize = new Vector2(80f, 42f);
-
         private static readonly Color DefaultTextColour = new Color(0.9f, 0.9f, 0.9f, 0.75f);
         private static readonly Color SearchTextColour = new Color(1f, 1f, 1f, 0.75f);
 
