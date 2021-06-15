@@ -8,7 +8,7 @@ namespace HUISearch.Installers
     {
         public override void InstallBindings()
         {
-            Container.BindInterfacesAndSelfTo<SearchScreenManager>().AsSingle();
+            Container.BindInterfacesAndSelfTo<SearchWidgetScreenManager>().AsSingle();
             Container.BindInterfacesAndSelfTo<SearchKeyboardScreenManager>().AsSingle();
 
             Container.BindInterfacesAndSelfTo<SearchSettingsTab>().AsSingle();

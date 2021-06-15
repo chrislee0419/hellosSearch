@@ -6,21 +6,21 @@ using TMPro;
 using HMUI;
 using VRUIControls;
 using BeatSaberMarkupLanguage.Attributes;
-using BeatSaberMarkupLanguage.Components;
 using HUI.UI.Screens;
 using HUI.UI.Components;
+using HUI.UI.CustomBSML.Components;
 using HUI.Utilities;
 using Object = UnityEngine.Object;
 
 namespace HUISearch.UI.Screens
 {
-    public class SearchScreenManager : ModifiableScreenManagerBase
+    public class SearchWidgetScreenManager : ModifiableScreenManagerBase
     {
         public event Action SearchButtonPressed;
         public event Action CancelButtonPressed;
 
         public override string ScreenName => "Search Widget";
-        protected override string AssociatedBSMLResource => "HUISearch.UI.Views.SearchScreenView.bsml";
+        protected override string AssociatedBSMLResource => "HUISearch.UI.Views.SearchWidgetScreenView.bsml";
 
         public string SearchText
         {
@@ -40,7 +40,7 @@ namespace HUISearch.UI.Screens
             }
         }
 
-        private ScrollingText _searchButtonText;
+        private HUIScrollingText _searchButtonText;
 
 #pragma warning disable CS0649
         [UIObject("search-button")]
@@ -52,7 +52,7 @@ namespace HUISearch.UI.Screens
         private static readonly Color DefaultTextColour = new Color(0.9f, 0.9f, 0.9f, 0.75f);
         private static readonly Color SearchTextColour = new Color(1f, 1f, 1f, 0.75f);
 
-        public SearchScreenManager(
+        public SearchWidgetScreenManager(
             MainMenuViewController mainMenuVC,
             SoloFreePlayFlowCoordinator soloFC,
             PartyFreePlayFlowCoordinator partyFC,
@@ -98,7 +98,7 @@ namespace HUISearch.UI.Screens
             // search text
             Object.Destroy(container.transform.Find("Text").gameObject);
 
-            _searchButtonText = new GameObject("Text").AddComponent<ScrollingText>();
+            _searchButtonText = new GameObject("Text").AddComponent<HUIScrollingText>();
             _searchButtonText.textComponent.text = "Search";
             _searchButtonText.textComponent.fontSize = 4f;
             _searchButtonText.textComponent.alignment = TextAlignmentOptions.Midline;

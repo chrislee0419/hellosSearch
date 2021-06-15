@@ -18,7 +18,7 @@ namespace HUISearch.Search
 
         private WordSearchEngine _wordSearchEngine;
         private WordPredictionEngine _wordPredictionEngine;
-        private SearchScreenManager _searchScreenManager;
+        private SearchWidgetScreenManager _searchScreenManager;
         private SearchKeyboardScreenManager _searchKeyboardScreenManager;
 
         private IAnnotatedBeatmapLevelCollection _originalLevelCollection;
@@ -29,7 +29,7 @@ namespace HUISearch.Search
         public SearchManager(
             WordSearchEngine wordSearchEngine,
             WordPredictionEngine wordPredictionEngine,
-            SearchScreenManager searchScreenManager,
+            SearchWidgetScreenManager searchScreenManager,
             SearchKeyboardScreenManager searchKeyboardScreenManager)
         {
             _wordSearchEngine = wordSearchEngine;
