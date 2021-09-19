@@ -58,7 +58,7 @@ namespace HUISearch.UI.Screens
             PartyFreePlayFlowCoordinator partyFC,
             LevelCollectionNavigationController levelCollectionNC,
             PhysicsRaycasterWithCache physicsRaycaster)
-            : base(mainMenuVC, soloFC, partyFC, levelCollectionNC, physicsRaycaster, new Vector2(44f, 10f), new Vector3(0f, 0.15f, 3.1f), Quaternion.Euler(65f, 0f, 0f))
+            : base(mainMenuVC, soloFC, partyFC, levelCollectionNC, physicsRaycaster, new Vector2(44f, 10f), new Vector3(0f, 0.15f, 3.6f), Quaternion.Euler(65f, 0f, 0f))
         {
             this._screen.name = "HUISearchScreen";
             this._animationHandler.UsePointerAnimations = false;

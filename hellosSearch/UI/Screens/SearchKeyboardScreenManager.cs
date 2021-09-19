@@ -82,7 +82,7 @@ namespace HUISearch.UI.Screens
         private bool _symbolMode = false;
         private CustomKeyboardActionButton _symbolButton;
 
-        public static readonly Vector3 DefaultKeyboardPosition = new Vector3(0f, 0.5f, 1.4f);
+        public static readonly Vector3 DefaultKeyboardPosition = new Vector3(0f, 0.5f, 1.7f);
         public static readonly Quaternion DefaultKeyboardRotation = Quaternion.Euler(75f, 0f, 0f);
 
         private const float KeyWidth = 5.5f;
